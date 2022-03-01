@@ -85,8 +85,6 @@ https://www.linuxfromscratch.org/patches/lfs/development/perl-5.34.0-upstream_fi
 https://www.linuxfromscratch.org/patches/lfs/development/sysvinit-3.01-consolidated-1.patch
 https://intestinate.com/pilfs/patches/gcc-9.1.0-rpi4-cpu-default.patch
 https://intestinate.com/pilfs/patches/expect5.45-aarch64-fix.patch
-https://intestinate.com/pilfs/scripts/ch5-build.sh
-https://intestinate.com/pilfs/scripts/ch7-build.sh
 https://intestinate.com/pilfs/scripts/pilfs-bootscripts-20190902.tar.xz
 https://github.com/raspberrypi/linux/archive/rpi-5.15.y.tar.gz
 https://github.com/raspberrypi/firmware/archive/master.tar.gz
