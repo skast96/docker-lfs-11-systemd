@@ -5,6 +5,7 @@ ac1c5a7a084f0f83b8cace34211f64d8  attr-2.5.1.tar.gz
 c17b20a09fc38d67fb303aeb6c130b4e  bash-5.1.16.tar.gz
 19dbb20c3aba33acacec29edd0b2c46e  bc-5.2.1.tar.xz
 e78d9ff2976b745a348f4c1f27c77cb1  binutils-2.37.tar.xz
+3df11b6123d5bbdb0fc83862a003827a  binutils-2.38-lto_fix-1.patch
 c28f119f405a2304ff0a7ccdcc629713  bison-3.8.2.tar.xz
 6a5ac7e89b791aae556de0f745916f7f  bzip2-1.0.8-install_docs-1.patch
 67e051268d0c475ea773822f7500d0e5  bzip2-1.0.8.tar.gz
@@ -17,6 +18,7 @@ c28f119f405a2304ff0a7ccdcc629713  bison-3.8.2.tar.xz
 3da91854c960ad8a819b48b2a404eb43  e2fsprogs-1.46.5.tar.gz
 2c095e31e35d6be7b3718477b6d52702  elfutils-0.186.tar.bz2
 417ba948335736d4d81874fba47a30f7  eudev-3.2.11.tar.gz
+75a1f475e30281a00cb6f083ea481159  expat-2.4.7.tar.xz
 00fce8de158422f5ccd2666512329bd2  expect5.45.4.tar.gz
 5ca22321cff0aa099d127f46869cd17d  expect5.45-aarch64-fix.patch
 18233bb0a0089dfdc7dfbc93b96f231b  file-5.41.tar.gz
@@ -42,7 +44,7 @@ f75cca16a38da6caa7d52151f7136895  kbd-2.4.0-backspace-1.patch
 3cac5be0096fcf7b32dcbd3c53831380  kbd-2.4.0.tar.xz
 e81e63acd80697d001c8d85c1acb38a0  kmod-29.tar.xz
 f029087448357812fba450091a1172ab  less-590.tar.gz
-c1cab628cb5de7b79638edf34e5c4360  lfs-bootscripts-20210608.tar.xz
+e2b46d3ec570919e7581754b45ac3e17  lfs-bootscripts-20210608.tar.xz
 18410cec436f827e698ee9ea16ada9b7  libcap-2.63.tar.xz
 294b921e6cf9ab0fbaea4b639f8fdbe8  libffi-3.4.2.tar.gz
 3e725c76bfea1985e87e851ee50c2e29  libpipeline-1.5.5.tar.gz
@@ -51,7 +53,7 @@ c1cab628cb5de7b79638edf34e5c4360  lfs-bootscripts-20210608.tar.xz
 fc7a67ea86ace13195b0bce683fd4469  make-4.3.tar.gz
 96009cd422f2e62b01b8c4de0f5691f1  man-db-2.10.0.tar.xz
 3ac24e8c6fae26b801cb87ceb63c0a30  man-pages-5.13.tar.xz
-d3a9d926a7803f2eee9cfd4cfedd29ee  master.tar.gz
+1cc2c79df3f9653f7a7dc122cd241c01  master.tar.gz
 8ed66d5537275df3defffb66d1fb897f  meson-0.61.1.tar.gz
 9f16c976c25bb0f76b50be749cd7a3a8  mpc-1.2.1.tar.gz
 bdd3d5efba9c17da8d83a35ec552baef  mpfr-4.1.0.tar.xz
@@ -68,7 +70,7 @@ d60613e88c2f442ebd462b5a75313d56  procps-ng-3.3.17.tar.xz
 ffa52f0017baf72df9d32dec785fd6ab  python-3.10.2-docs-html.tar.bz2
 14e8c22458ed7779a1957b26cde01db9  Python-3.10.2.tar.xz
 12819fa739a78a6172400f399ab34f81  readline-8.1.2.tar.gz
-3c5ac2545d945d4c332655777e1e029f  rpi-5.15.y.tar.gz
+6d647985f929e43352139ad5b143d557  rpi-5.15.y.tar.gz
 6d906edfdb3202304059233f51f9a71d  sed-4.8.tar.xz
 5a95ec069aa91508167d02fecafaa912  shadow-4.11.1.tar.xz
 c70599ab0d037fde724f7210c2c8d7f8  sysklogd-1.5.1.tar.gz
