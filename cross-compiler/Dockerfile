@@ -23,4 +23,3 @@ RUN md5sum -c md5sum.chk
 # Copy needed scripts
 COPY scripts $LFS/scripts
 # Start building
-RUN tail -f /dev/null

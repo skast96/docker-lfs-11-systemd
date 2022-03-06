@@ -1,6 +1,6 @@
 set +h
 umask 022
-LFS=/mnt/lfs
+LFS=/lfs
 LC_ALL=POSIX
 LFS_TGT=$(uname -m)-lfs-linux-gnu
 PATH=/usr/bin

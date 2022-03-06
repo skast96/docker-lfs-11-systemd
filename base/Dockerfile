@@ -5,6 +5,10 @@ LABEL description="Base image of the automated LFS build"
 LABEL version="11.0"
 LABEL maintainer="stephan.kast96@gmail.com"
 
+# Compile variables
+ENV MAKEFLAGS='-j 1'
+ENV JOB_COUNT=1
+
 # LFS mount point
 ENV LFS=/lfs
 

@@ -24,5 +24,5 @@ sleep 10
 
 # Build cross-toolchain image which is based of the base image
 cd cross-compiler || exit 1
-docker buildx build --platform="$PLATFORM" -t skast/lfs-cross:11.0 . # --load
+docker buildx build --platform="$PLATFORM" -t skast/lfs-cross:11.0 . --load
 cd ..
