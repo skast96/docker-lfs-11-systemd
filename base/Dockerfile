@@ -11,20 +11,13 @@ ENV LFS=/lfs
 # Other LFS parameters
 ENV LC_ALL=POSIX
 
-# ENV LFS_TGT=x86_64-lfs-linux-gnu
-ENV LFS_TGT=aarch64-lfs-linux-gnu
-
 ENV PATH=/tools/bin:/bin:/usr/bin:/sbin:/usr/sbin
-ENV MAKEFLAGS="-j 1"
 
 # set 1 to run tests; running tests takes much more time
 ENV LFS_TEST=0
 
 # set 1 to install documentation; slightly increases final size
 ENV LFS_DOCS=0
-
-# degree of parallelism for compilation
-ENV JOB_COUNT=1
 
 # set bash as default shell
 WORKDIR /bin
