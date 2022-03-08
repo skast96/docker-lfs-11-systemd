@@ -5,6 +5,16 @@ LABEL description="Base image of the automated LFS build"
 LABEL version="11.0"
 LABEL maintainer="stephan.kast96@gmail.com"
 
+####################################
+#######Architecture Settings########
+####################################
+
+# Use aarch64 for 64-bit image builds
+# Use armv7 for 32-bit image builds
+
+ENV LFS_TGT=aarch64-lfs-linux-gnu
+#ENV LFS_TGT=armv7l-lfs-linux-gnueabihf
+
 # Compile variables
 ENV MAKEFLAGS='-j 1'
 ENV JOB_COUNT=1
@@ -33,6 +43,7 @@ RUN apt-get update && apt-get install -y \
     bison                                \
     file                                 \
     gawk                                 \
+    python3                              \
     texinfo                              \
     wget                                 \
     sudo                                 \
@@ -45,7 +56,7 @@ RUN mkdir -pv     $LFS/sources   \
  && chmod -v a+wt $LFS/sources   \
  && ln    -sv     $LFS/sources /
 
-# create book directory as writable and sticky
+# create stages directory as writable and sticky
 RUN mkdir -pv     $LFS/stages   \
  && chmod -v a+wt $LFS/stages   \
  && ln    -sv     $LFS/stages /
@@ -58,10 +69,6 @@ RUN mkdir -pv     $LFS/image   \
 # create tools directory and symlink
 RUN mkdir -pv $LFS/tools   \
  && ln    -sv $LFS/tools /
-
-# check environment
-COPY ["scripts/", "/scripts"]
-RUN /scripts/version-check.sh && rm -rf /scripts
 
 # create lfs user with 'lfs' password
 RUN groupadd lfs                                    \
@@ -85,3 +92,11 @@ RUN source ~/.bash_profile
 
 # change path to home folder as default
 WORKDIR /home/lfs
+
+# copy all stages
+COPY ["stages/", "$LFS/stages"]
+WORKDIR $LFS/stages
+# check environment
+# RUN /stages/stage0/version-check.sh
+
+
